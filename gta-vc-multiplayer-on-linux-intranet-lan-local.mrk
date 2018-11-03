@@ -1,0 +1,72 @@
+
+!tex
+!begin
+!title GTA VC MP running on Linux
+!author 
+!date    
+!maketitle 
+
+!= Introduction 
+GTA-Vice city is a fabulous game, which is greatly made and
+allows large possibilities.
+The first step is to buy GTA VC. You can find it for about 10 bucks. 
+
+
+!= Installation
+Installation of Linux Devuan (no systemd).
+ 4.9.0-6-686-pae SMP Debian 4.9.88-1+deb9u1 (2018-05-07) i686 GNU/Linux
+
+!== VC:MP Server (on Linux Devuan, x86)
+First use the blank server zip file, i.e. according to the files, it is: 
+- plugins,
+- scripts,
+- server.cfg,
+- server.conf,
+- server.exe,
+- server32.exe
+and 
+- store.
+
+The server.cfg has the following content: \\
+gamemode Default\\
+plugins squirrel04rel32 xmlconf04rel32 announce04rel32\\
+port 5192\\
+sqgamemode scripts/main.nut\\
+maxplayers 100\\
+
+The server.conf is in the same directory.
+You may start the server with wine:
+wine server.exe server.cfg
+It shows that the server is running with given port (5192).
+
+
+!== VC:MP Client (on Linux Devuan, x86)
+Install the game in the directory /home/username/games/gta-vc/.  
+It will be easy to find. 
+Once done you can place the 1.0 gta-vc (if you would like to make it simple to use), 
+167a5c8b31b3e0dbefa033ca24453d4e  gtavc/gta-vc.exe.
+
+!rawline Install the msi file with msiexec /i VCMP_Installer.msi 
+and let it "typical". 
+The location of the installed files for running the vc:mp client is :
+!rawline ~/.wine/drive_c/users/username/Local Settings/Application Data/Vice City Multiplayer$ 
+
+You give a name in settings and set in favorites: 10.0.0.15:5192 for a given IP and Port (here concerning a given lan on 10.0.0.x with 15 for the IP of the server).
+
+
+!= Conclusion 
+!== Playing
+The games VC shows a good set of possibilities and many 
+hours of possible playing/gaming.
+
+Have Fun !
+
+
+
+
+
+
+
+
+
+
